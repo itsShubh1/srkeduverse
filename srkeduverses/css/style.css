@@ -1,0 +1,115 @@
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  
+}
+
+.logo{
+  height:56px;
+  width: 10%;
+  margin: 34px 45px;
+}
+.custom-nav .custom-nav-item a {
+  color: #fff !important;
+}
+
+.custom-nav-item:hover {
+  background-color: #dc3545;
+  border: solid #dc3545 1px;
+  border-radius: 10px;
+}
+.custom-nav-itempsc:hover {
+  background-color: rgb(255, 156, 64);
+  border-radius: 10px;
+  border: solid #dc8e35 1px;
+
+}
+.remove-vid-marg {
+  margin: 0px;
+  padding: 0px;
+}
+
+.vid-parent {
+  position: relative;
+  display: flex;
+
+  
+}
+video {
+  width: 135%;
+  height: 100%;
+}
+.vid-overlay {
+  position: absolute;
+  top: 0;
+  left: -16px;
+  height: 100%;
+  width: 105%;
+  background-color: #151b1f;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.vid-content {
+  color: #fff;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  z-index: 2;
+  text-align: center;
+  font-family: cursive;
+}
+
+.bottom-banner {
+  color: #fff;
+  padding: 10px;
+}
+
+.bottom-banner:first-child {
+  padding-left: 50px;
+}
+
+a.social-hover:hover {
+  padding: 5px 100px;
+  text-decoration: none;
+  background-color: rgb(95, 93, 93);
+}
+
+.stripe {
+  background-image: linear-gradient(240deg, #ed213a, #93291e);
+  padding: 3rem;
+  height: 13rem;
+  margin-top: 4rem;
+  transform: rotate(10deg);
+  z-index: -5;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-content,
+  .txt-banner,
+  .stripe {
+    display: none;
+  } /* hide it on small screens */
+
+ 
+  .vid-content {
+    top: 17%;
+    left: 39%;
+ }
+  video {
+    width: 101%;
+    height: 100%;
+  }
+  .custom-nav .custom-nav-item a {
+    padding: 10px 20px;
+    background-color: #225470;
+  }
+
+  .custom-nav-item:hover {
+    background-color: none;
+    border: none;
+    border-radius: none;
+  }
+}
